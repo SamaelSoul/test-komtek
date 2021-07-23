@@ -1,5 +1,5 @@
 <template>
-  <component :is="isComponent + '-layout'"></component>
+  <component v-if="this.$route.meta.layout" :is="isComponent + '-layout'"></component>
 </template>
 
 <script>
